@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3526B166-621C-4D70-B575-49CEA306067B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>workfromhome1221</RootNamespace>
+    <AssemblyName>workfromhome1221</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_result1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_result1.Designer.cs">
+      <DependentUpon>add_result1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_key.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_key.Designer.cs">
+      <DependentUpon>admin_key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_page.Designer.cs">
+      <DependentUpon>admin_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_profile.Designer.cs">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_sign_in.Designer.cs">
+      <DependentUpon>admin_sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_emp.Designer.cs">
+      <DependentUpon>all_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_rec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_rec.Designer.cs">
+      <DependentUpon>all_rec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biding.Designer.cs">
+      <DependentUpon>biding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_log_in.Designer.cs">
+      <DependentUpon>emp_log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_profile.Designer.cs">
+      <DependentUpon>emp_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_sign_in.Designer.cs">
+      <DependentUpon>emp_sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="final_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="final_result.Designer.cs">
+      <DependentUpon>final_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="post_job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="post_job.Designer.cs">
+      <DependentUpon>post_job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recuriter_sin_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recuriter_sin_in.Designer.cs">
+      <DependentUpon>recuriter_sin_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_profile.Designer.cs">
+      <DependentUpon>rec_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_sign.Designer.cs">
+      <DependentUpon>rec_sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_all_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_all_admin.Designer.cs">
+      <DependentUpon>show_all_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_bid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_bid.Designer.cs">
+      <DependentUpon>show_bid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_job.Designer.cs">
+      <DependentUpon>show_job.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_result1.resx">
+      <DependentUpon>add_result1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_key.resx">
+      <DependentUpon>admin_key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_page.resx">
+      <DependentUpon>admin_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_profile.resx">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_sign_in.resx">
+      <DependentUpon>admin_sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_emp.resx">
+      <DependentUpon>all_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_rec.resx">
+      <DependentUpon>all_rec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biding.resx">
+      <DependentUpon>biding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_log_in.resx">
+      <DependentUpon>emp_log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_profile.resx">
+      <DependentUpon>emp_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_sign_in.resx">
+      <DependentUpon>emp_sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="final_result.resx">
+      <DependentUpon>final_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="post_job.resx">
+      <DependentUpon>post_job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recuriter_sin_in.resx">
+      <DependentUpon>recuriter_sin_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_profile.resx">
+      <DependentUpon>rec_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_sign.resx">
+      <DependentUpon>rec_sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_all_admin.resx">
+      <DependentUpon>show_all_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_bid.resx">
+      <DependentUpon>show_bid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_job.resx">
+      <DependentUpon>show_job.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
